@@ -1,5 +1,5 @@
 const { Precondition } = require('@sapphire/framework');
-const { owners } = require('../../config.json');
+const { owners } = require('../../../config.json');
 
 class UserPrecondition extends Precondition {
 	async run(message) {
