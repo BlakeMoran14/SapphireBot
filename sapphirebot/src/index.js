@@ -1,6 +1,6 @@
 require('./lib/setup');
 const { LogLevel, SapphireClient, container } = require('@sapphire/framework');
-const { prefix, discord_token } = require('./config.json');
+const { prefix, discord_token } = require('../../config.json');
 
 const client = new SapphireClient({
 	defaultPrefix: prefix,
