@@ -1,5 +1,6 @@
 const { Listener } = require('@sapphire/framework');
 const { blue, gray, green, magenta, magentaBright, white, yellow } = require('colorette');
+var DanBotHosting = require("danbot-hosting");
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -16,7 +17,20 @@ class UserEvent extends Listener {
 	run() {
 		this.printBanner();
 		this.printStoreDebugInformation();
+        this.dbhAPILoader();
 	}
+    
+    async dbhAPILoader() {
+        const { client } = this.container;
+        
+const API = new DanBotHosting.Client("danbot-5xsvjeiH0YUBDVODvO$8FOundefinedKY16NW$KkXh%2Asvf", client);
+ 
+  // Start posting
+  let initalPost = await API.autopost();
+        
+        let res = await API.botInfo()
+ console.log(res)
+}
 
 	printBanner() {
 		const success = green('+');

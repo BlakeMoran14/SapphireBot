@@ -1,0 +1,1 @@
+cd sapphirebot && npm start

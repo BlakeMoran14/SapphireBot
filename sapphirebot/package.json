@@ -19,9 +19,10 @@
     "@sapphire/type": "^2.1.2",
     "@sapphire/utilities": "^3.2.1",
     "cheerio": "^1.0.0-rc.10",
+    "danbot-hosting": "^0.1.6",
     "discord.js": "^13.6.0",
     "prettysize": "^2.0.0",
-    "puppeteer": "^13.1.2"
+    "puppeteer": "^2.1.0"
   },
   "devDependencies": {
     "@sapphire/prettier-config": "^1.2.9",
